@@ -5,10 +5,17 @@ class PlacesListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Places List Screen'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Your Places'),
+        actions: [
+          IconButton(
+            onPressed: () {}, 
+            icon: Icon(Icons.add),
+          ),
+        ],
       ),
+      body: ,
     );
   }
 }
