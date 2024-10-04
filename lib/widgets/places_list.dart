@@ -13,7 +13,7 @@ class PlacesList extends StatelessWidget {
       return Center(
         child: Text(
           'No Places Added!',
-          style: Theme.of(context).textTheme.titleMedium!.copyWith(
+          style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                 color: Theme.of(context).colorScheme.onBackground,
               ),
         ),
