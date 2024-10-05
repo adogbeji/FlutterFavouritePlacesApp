@@ -10,10 +10,17 @@ class AddPlace extends StatefulWidget {
 class _AddPlaceState extends State<AddPlace> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Add Place'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Add New Place'),
       ),
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            TextField(),
+          ],
+        ),
+      ), 
     );
   }
 }
