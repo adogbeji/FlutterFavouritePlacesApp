@@ -8,16 +8,31 @@ class AddPlace extends StatefulWidget {
 }
 
 class _AddPlaceState extends State<AddPlace> {
+  final _titleController = TextEditingController();
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _titleController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Add New Place'),
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            TextField(),
+            TextField(
+              decoration: const InputDecoration(
+                // label: Text('Title'),
+                labelText: 'Title',
+              ),
+              controller: _titleController,
+            ),
           ],
         ),
       ), 
