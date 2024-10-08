@@ -33,6 +33,8 @@ class _AddPlaceState extends State<AddPlace> {
               ),
               controller: _titleController,
             ),
+
+            const SizedBox(height: 16,),
           ],
         ),
       ), 
