@@ -24,6 +24,7 @@ class _AddPlaceState extends State<AddPlace> {
         title: const Text('Add New Place'),
       ),
       body: SingleChildScrollView(
+        padding: const EdgeInsets.all(12),
         child: Column(
           children: [
             TextField(
@@ -35,9 +36,15 @@ class _AddPlaceState extends State<AddPlace> {
             ),
 
             const SizedBox(height: 16,),
+
+            ElevatedButton.icon(
+              onPressed: () {},
+              icon: const Icon(Icons.add),
+              label: const Text('Add Place'),
+            ),
           ],
         ),
-      ), 
+      ),
     );
   }
 }
