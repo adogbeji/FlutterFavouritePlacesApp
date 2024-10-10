@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AddPlace extends StatefulWidget {
-  const AddPlace({super.key});
+class AddPlaceScreen extends StatefulWidget {
+  const AddPlaceScreen({super.key});
 
   @override
-  State<AddPlace> createState() => _AddPlaceState();
+  State<AddPlaceScreen> createState() => _AddPlaceScreenState();
 }
 
-class _AddPlaceState extends State<AddPlace> {
+class _AddPlaceScreenState extends State<AddPlaceScreen> {
   final _titleController = TextEditingController();
 
   @override
