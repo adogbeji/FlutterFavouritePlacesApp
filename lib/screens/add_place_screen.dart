@@ -33,6 +33,9 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
                 labelText: 'Title',
               ),
               controller: _titleController,
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.onBackground,
+              ),
             ),
 
             const SizedBox(height: 16,),
