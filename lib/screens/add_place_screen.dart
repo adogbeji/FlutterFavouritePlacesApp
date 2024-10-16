@@ -10,6 +10,8 @@ class AddPlaceScreen extends StatefulWidget {
 class _AddPlaceScreenState extends State<AddPlaceScreen> {
   final _titleController = TextEditingController();
 
+  void _savePlace() {}
+
   @override
   void dispose() {
     // TODO: implement dispose
