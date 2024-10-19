@@ -13,13 +13,15 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
   final _titleController = TextEditingController();
 
   void _savePlace() {
-    final enteredText = _titleController.text;
+    final enteredTitle = _titleController.text;
 
-    if (enteredText.isEmpty) {
+    if (enteredTitle.isEmpty) {
       return;  // Stops code execution
     }
 
-    ref.read(userPlacesProvider);
+    ref.read(userPlacesProvider.notifier).addPlace(enteredTitle);
+
+    Navigator.of(context).pop();
   }
 
   @override

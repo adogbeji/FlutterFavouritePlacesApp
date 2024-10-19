@@ -2,12 +2,13 @@ import 'package:favourite_places/screens/add_place_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:favourite_places/widgets/places_list.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class PlacesListScreen extends StatelessWidget {
-  const PlacesListScreen({super.key});
+class PlacesScreen extends ConsumerWidget {
+  const PlacesScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Your Places'),
