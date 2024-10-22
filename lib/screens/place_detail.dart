@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
+import 'package:favourite_places/models/place.dart';
+
 class PlaceDetailScreen extends StatelessWidget {
-  const PlaceDetailScreen({super.key});
+  const PlaceDetailScreen({super.key, required this.place});
+
+  final Place place;
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Place Detail Screen'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(place.title),
       ),
     );
   }
